@@ -1,1 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 
+body {
+  font-family: 'Anton', sans-serif;
+}
+
+nav {
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+  }
+  
+nav #links {
+    display: none;
+  }
+  
+nav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: block;
+  }
+  
+nav a.burger-icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 9px;
+  }
+nav a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+  }
+.site-logo img {
+    padding: 5px 0 0 5px;
+}
+#banner {
+  background: url('../img/Camada.png') no-repeat center center fixed;
+  padding: 200px 0;
+}
+#banner h1 {
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+  max-width: 290px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.details button {
+  background: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 50px;
+}
+.details {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.details button:hover {
+  color: black;
+  background: white;
+  border: none;
+}
+#snowboards,
+#features {
+  background: white;
+  padding: 150px 0;
+}
+#snowboards h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+#snowboards p {
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#company {
+  background: url('../img/company-bg.png') no-repeat center center fixed;
+  padding: 15px 0;
+}
+#company h2 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding-bottom: 15px;
+}
+#company p {
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  padding: 10px 8px;
+}
+#features h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+.features-container {
+  max-width: 220px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.features-container img {
+  padding-bottom: 5px;
+  max-width: 200px;
+}
+.carousel-item > img {
+  margin: 0 auto;
+  max-width: 310px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;  
+  max-width: 250px;
+  margin: 0 auto;
+}
+.product:hover {
+  border: 1px solid white;
+}
+.product img {
+  display: block;
+  width: 65%;
+}
+.product h3 {
+  padding: 10px 0;
+  color: white;
+  text-transform: uppercase;
+}
+.card-button {
+  text-transform: uppercase;
+  background: black;
+  color: white;
+  border: 1px solid white;
+} 
+.product-list,
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.details {
+  text-align: center;
+  padding-bottom: 15px;
+}
+footer {
+  background: url('../img/footer-bg.png') no-repeat center center fixed;
+  padding: 50px 0 70px 0;
+}
+footer h2 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding-bottom: 15px;
+}
+.map {
+  width: 250px;
+  margin: 0 auto;
+}
+.social {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.social i:hover {
+  color: green;
+}
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+.footer-nav a {
+  padding: 15px 0;
+  color: white;
+  text-transform: uppercase;
+}
+.footer-nav a:hover {
+  color: green;
+  text-decoration: none;
+}
+.footer-nav li {
+  padding: 15px 0;
+}
+.footer-info {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+footer hr {
+  border: 1px solid white;
+}
+@media (min-width: 646px) {
+  .product-list,
+  .features-list {
+    grid-template-columns: 1fr 1fr;
+  }   
+  .burger-icon {
+    visibility: hidden;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  nav #links {
+    display: flex;
+  }
+  nav,
+  main,
+  footer {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 750px) {
+  .product-list,
+  .features-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  } 
+}
